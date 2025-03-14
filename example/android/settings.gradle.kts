@@ -1,8 +1,8 @@
 pluginManagement {
-    def flutterSdkPath = {
-        def properties = new Properties()
+    val flutterSdkPath = {
+        val properties = new Properties()
         file("local.properties").withInputStream { properties.load(it) }
-        def flutterSdkPath = properties.getProperty("flutter.sdk")
+        val flutterSdkPath = properties.getProperty("flutter.sdk")
         assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
         return flutterSdkPath
     }()
@@ -17,9 +17,9 @@ pluginManagement {
 }
 
 plugins {
-    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
-    id "com.android.application" version "8.2.2" apply false
-    id "org.jetbrains.kotlin.android" version "1.6.21" apply false
+    id("dev.flutter.flutter-plugin-loader") version "1.0.0"
+    id("com.android.application") version "8.2.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.6.21" apply false
 }
 
-include ":app"
+include(":app")
