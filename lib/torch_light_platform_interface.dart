@@ -1,6 +1,6 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-import 'torch_light_method_channel.dart';
+import 'package:torch_light/torch_light_method_channel.dart';
 
 abstract class TorchLightPlatform extends PlatformInterface {
   /// Constructs a TorchLightPlatform.
