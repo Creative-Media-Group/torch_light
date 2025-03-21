@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'torch_light_platform_interface.dart';
+import 'package:torch_light/torch_light_platform_interface.dart';
 
 /// An implementation of [TorchLightPlatform] that uses method channels.
 class MethodChannelTorchLight extends TorchLightPlatform {

@@ -5,7 +5,7 @@ import 'package:torch_light/torch_light_method_channel.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  MethodChannelTorchLight platform = MethodChannelTorchLight();
+  final MethodChannelTorchLight platform = MethodChannelTorchLight();
   const MethodChannel channel = MethodChannel('torch_light');
 
   setUp(() {
